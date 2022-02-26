@@ -196,7 +196,7 @@ Kembalikan kembali ke Akun Pengguna Dari Hak Admin.
     global useer
     if chat_id in DISABLED_GROUPS:
         return await message.reply_text(
-            f"😕 **Maap {message.from_user.mention}, Musicnya Dimatiin Sama Admin**" 
+            f"🥺 **Maap {message.from_user.mention}, Musicnya Dimatiin Sama Tuan**" 
         )
         return
     user_id = message.from_user.id
@@ -299,7 +299,7 @@ Saya perlu menjadi admin dengan beberapa izin:
         what = "Audio Searched"
         await LOG_CHAT(message, what)
         mystic = await message.reply_text(
-            f"**🔄 Memproses Audio Yang Diberikan Oleh {username}**"
+            f"**🔄  Sedang Memproses Audio Yang Diberikan Oleh {username}**"
         )
         if audio.file_size > 157286400:
             await mystic.edit_text("Ukuran File Audio Harus Kurang dari 150 mb")
@@ -330,7 +330,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             else file_name,
         )
         title = "Audio Yang Dipilih Dari Telegram"
-        link = "https://t.me/NastyProject"
+        link = "https://t.me/notturarea"
         thumb = "cache/Audio.png"
         videoid = "smex1"
     elif url:
@@ -364,9 +364,9 @@ Saya perlu menjadi admin dengan beberapa izin:
 """
             )
         if duration == "None":
-            return await mystic.edit_text("Maaf! Video langsung tidak Didukung")
+            return await mystic.edit_text("Maaf! Video langsung tidak Didukung🥴")
         if views == "None":
-            return await mystic.edit_text("Maaf! Video langsung tidak Didukung")
+            return await mystic.edit_text("Maaf! Video langsung tidak Didukung🥴")
         semxbabes = f"Downloading {title[:50]}"
         await mystic.edit(semxbabes)
         theme = random.choice(themes)
@@ -457,7 +457,7 @@ Saya perlu menjadi admin dengan beberapa izin:
         what = "Query Given"
         await LOG_CHAT(message, what)
         query = message.text.split(None, 1)[1]
-        mystic = await message.reply_text("**🔎 Pencarian**")
+        mystic = await message.reply_text("**🔎 Pencarian Bree**")
         try:
             a = VideosSearch(query, limit=5)
             result = (a.result()).get("result")
