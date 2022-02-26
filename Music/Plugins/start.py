@@ -70,7 +70,7 @@ pstart_markup = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton("🌐 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🌐", url="https://github.com/jookalem/XoneMusic"),
-        
+        ],
     ]
 )
 welcome_captcha_group = 2
